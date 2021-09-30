@@ -1,0 +1,35 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.masthead .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.masthead img {
+  min-height: 500px;
+  width: 100%;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+#top-navbar {
+  background-color: transparent;
+}
+
+.logo a {
+  color: orange;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.center-text {
+  color: white;
+}
