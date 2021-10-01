@@ -1,5 +1,5 @@
 .about-section {
-  margin: 10rem 5rem;
+  margin: 7rem 5rem;
 }
 
 .about-heading h1 {
@@ -34,6 +34,9 @@
 }
 
 /* hire button */
+.hire-btn {
+  height: 80px;
+}
 
 .hire-btn .link_wrapper {
   position: absolute;

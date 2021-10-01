@@ -9,12 +9,16 @@ import Skills from "./components/Skills/Skills.component";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <About />
+        <Skills />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

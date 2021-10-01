@@ -14,20 +14,68 @@
 }
 
 .footer-section {
-  height: 300px;
-}
-
-.footer-border {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 150px;
-  background-color: orange;
-  margin-top: -80px;
-  border-radius: 80px 80px 0 0;
+  position: relative;
+  padding-top: 40px;
+  margin: 0rem 5rem;
 }
 
 .footer-container {
   background-color: black;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+.footer-icons i {
+  font-size: 2rem;
+  margin: 1rem;
+  color: rgb(71, 70, 70);
+}
+.footer-icons i:hover {
+  color: orange;
+}
+
+.footer-text {
+  padding-top: 2rem;
+  color: black;
+  text-align: center;
+}
+
+/* Go To Top Button */
+#go-top {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -30px;
+}
+#go-top a {
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #525252;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 60px;
+  border-radius: 100%;
+}
+#go-top a:hover {
+  background-color: orange;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-info h1 {
+  color: orange;
+  font-weight: 200;
 }

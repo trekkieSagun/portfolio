@@ -1,7 +1,28 @@
+.banner-icons i {
+  display: block;
+  margin: 20px;
+  font-size: 2.5rem;
+  color: white;
+}
+.banner-icons i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.about-me-btn {
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 200;
+}
+
 .masthead {
   height: 100vh;
-  min-height: 500px;
-  background-color: black;
+  min-height: 100vh;
+  background-color: purple;
   overflow: hidden;
 }
 
@@ -20,10 +41,6 @@
   padding: 1rem;
 }
 
-#top-navbar {
-  background-color: transparent;
-}
-
 .logo a {
   color: orange;
   font-size: 2rem;
@@ -32,4 +49,41 @@
 
 .center-text {
   color: white;
+  padding: 50px;
+}
+
+.toggleNavbar {
+  background-color: black !important;
+  border-radius: 50px !important;
+  margin: 10px 20px !important;
+}
+
+.nav-link {
+  color: white;
+}
+
+@media screen and (max-width: 760px) {
+  .banner-icons i {
+    display: inline;
+  }
+
+  .banner-icons {
+    margin-top: -90px;
+  }
+
+  .masthead .centered {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .masthead {
+    height: auto;
+  }
+
+  .center-text h1 {
+    font-size: 32px;
+  }
+  .center-text p {
+    font-size: 18px;
+  }
 }

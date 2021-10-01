@@ -3,7 +3,7 @@ import "./Contact.component.css";
 class Contact extends Component {
   render() {
     return (
-      <div className="contact-container container">
+      <div className="contact-container">
         <div className="contact-header">
           <h1>Contact Me</h1>
           <p>You can easily contact me for any queries</p>
