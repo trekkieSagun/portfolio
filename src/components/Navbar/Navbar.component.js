@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.component.css";
 // import logo from "../images/logo.png";
 import background from "../../images/background.jpg";
+import ParticlesComponent from "../Particle/Particle.component";
 
 function Navbar() {
   // document.addEventListener("DOMContentLoaded", function () {
@@ -76,6 +77,7 @@ function Navbar() {
       </nav>
       <header className="masthead">
         {/* <img src={background} /> */}
+        <ParticlesComponent />
         <div className="centered container h-100">
           <div className="row h-100 align-items-center">
             <div className=" col-md-10 banner-content">

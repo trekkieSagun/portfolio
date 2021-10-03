@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer.component";
 import Navbar from "./components/Navbar/Navbar.component";
 import Portfolio from "./components/Portfolio/Portfolio.component";
 import Skills from "./components/Skills/Skills.component";
+import Text from "./components/text";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Portfolio />
         <Contact />
         <Footer />
+        <Text />
       </div>
     </div>
   );
