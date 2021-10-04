@@ -13,21 +13,61 @@ const About = () => {
             </div>
           </div>
           <div className="col-md-8">
-            <div className="about-heading">
+            {/* <div className="about-heading">
               <h1>Who Am I?</h1>
             </div>
             <div className="intro">
               <h1>Sagun Shrestha</h1>
               <p>I am react developer</p>
-            </div>
+            </div> */}
 
             <div className="about-me">
-              <h1>About me</h1>
+              <div className="intro">
+                <h1>About me</h1>
+                <div className="about-btn">
+                  <button className="active-about">
+                    <a href="#about">
+                      {" "}
+                      <i class="fas fa-info-circle"></i>Short Info
+                    </a>
+                  </button>
+                  <button className="non-active-about">
+                    {" "}
+                    <a href="#education">
+                      {" "}
+                      <i class="fas fa-graduation-cap"></i>Education
+                    </a>
+                  </button>
+                  <button className="non-active-about">
+                    {" "}
+                    <a href="#skills">
+                      {" "}
+                      <i class="fas fa-lightbulb"></i>Skills
+                    </a>
+                  </button>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+            <div className="about-details">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                {" "}
+                <strong>Name :</strong> <span>Sagun Shrestha</span>
+              </p>
+              <p>
+                <strong> Address :</strong> <span>Ktm, Nepal</span>
+              </p>
+              <p>
+                <strong>Contact Number :</strong> <span>9876545454</span>
+              </p>
+              <p>
+                <strong>E-mail :</strong> <span>Sagun@gmail.com</span>
               </p>
             </div>
             <div className="hire-btn">
@@ -47,7 +87,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div id="skills"></div>
+        <div id="resume"></div>
+        <div id="education"></div>
       </div>
     </div>
   );

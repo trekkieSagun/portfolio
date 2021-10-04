@@ -1,0 +1,92 @@
+.resume-container {
+  margin: 7rem 5rem;
+}
+
+.resume-container .heading {
+  padding: 0 80px;
+  margin-bottom: 20px;
+}
+
+.resume-container hr {
+  margin-bottom: 60px;
+  border: 1px solid orange;
+}
+
+.resume-container .heading h1 {
+  text-transform: uppercase;
+  border-bottom: 4px solid orange;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 10px;
+  color: #313131;
+}
+
+.resume-container h1 {
+  text-align: center;
+}
+
+.education-level {
+  margin-bottom: 40px;
+}
+
+.education-level .education-degree {
+  color: #313131;
+  margin-right: 10px;
+}
+
+.education-level button {
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid greenyellow;
+  padding: 5px 20px;
+}
+
+.education-date i {
+  margin-right: 10px;
+  color: greenyellow;
+}
+
+.education-level p {
+  margin: 20px 0;
+  color: rgb(75, 74, 74);
+}
+
+.bars {
+  width: 90%;
+
+  float: left;
+  text-align: left;
+}
+.bars .skills {
+  margin-top: 26px;
+  list-style: none;
+}
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #ccc;
+  height: 26px;
+  border-radius: 3px;
+}
+.bars li em {
+  font: 15px;
+  color: orange;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  position: relative;
+  top: -36px;
+}
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  margin: 0;
+  padding-right: 24px;
+  background: #313131;
+  display: inline-block;
+  height: 26px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}

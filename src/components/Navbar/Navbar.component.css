@@ -1,3 +1,29 @@
+.toggleNavbar {
+  background: rgba(255, 255, 255, 0.25);
+  /* background: transparent; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* backdrop-filter: blur(20px); */
+  /* -webkit-backdrop-filter: blur(20px); */
+  /* border-radius: 10px; */
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .toggleNavbar {
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+  }
+}
+
+.navbar ul li a {
+  color: purple;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar button {
+  color: red;
+}
+
 .banner-icons i {
   display: block;
   margin: 20px;
@@ -7,6 +33,10 @@
 .banner-icons i:hover {
   color: orange;
   cursor: pointer;
+}
+
+.banner-icons a {
+  text-decoration: none;
 }
 
 .about-me-btn {
@@ -22,7 +52,7 @@
 .masthead {
   height: 100vh;
   min-height: 100vh;
-  background-color: purple;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -31,10 +61,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.masthead img {
-  min-height: 500px;
-  width: 100%;
 }
 
 .navbar {
@@ -53,9 +79,9 @@
 }
 
 .toggleNavbar {
-  background-color: black !important;
+  /* background-color: black !important;
   border-radius: 50px !important;
-  margin: 10px 20px !important;
+  margin: 10px 20px !important; */
 }
 
 .nav-link {
