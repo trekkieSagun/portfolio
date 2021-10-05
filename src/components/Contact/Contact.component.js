@@ -15,29 +15,32 @@ class Contact extends Component {
               <div className="contact-icons">
                 <ul>
                   <li>
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-phone-alt" data-aos="fade-right"></i>
                   </li>
                   <li>
-                    <i class="fas fa-envelope-open-text"></i>
+                    <i
+                      class="fas fa-envelope-open-text"
+                      data-aos="fade-right"
+                    ></i>
                   </li>
                   <li>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" data-aos="fade-right"></i>
                   </li>
                 </ul>
               </div>
               <div className="contact-details">
                 <ul>
                   <li>
-                    <h3>Call Me Right Away</h3>
-                    <p>+977 - 9812322323</p>
+                    <h3 data-aos="fade-left">Call Me Right Away</h3>
+                    <p data-aos="fade-up">+977 - 9812322323</p>
                   </li>
                   <li>
-                    <h3>Mail Me At</h3>
-                    <p>sagun@gamil.com</p>
+                    <h3 data-aos="fade-left">Mail Me At</h3>
+                    <p data-aos="fade-up">sagun@gamil.com</p>
                   </li>
                   <li>
-                    <h3>Get Me Here</h3>
-                    <p>KTM, Nepal</p>
+                    <h3 data-aos="fade-left">Get Me Here</h3>
+                    <p data-aos="fade-up">KTM, Nepal</p>
                   </li>
                 </ul>
               </div>
@@ -48,8 +51,11 @@ class Contact extends Component {
             <form>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="email">Email</label>
+                  <label data-aos="fade-right" for="email">
+                    Email
+                  </label>
                   <input
+                    data-aos="fade-left"
                     type="email"
                     class="form-control"
                     id="inputEmail4"
@@ -57,8 +63,11 @@ class Contact extends Component {
                   />
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="password">Password</label>
+                  <label data-aos="fade-right" for="password">
+                    Password
+                  </label>
                   <input
+                    data-aos="fade-left"
                     type="password"
                     class="form-control"
                     placeholder="Password"
@@ -68,14 +77,24 @@ class Contact extends Component {
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" placeholder="Phone" />
+                  <label data-aos="fade-right" for="phone">
+                    Phone
+                  </label>
+                  <input
+                    data-aos="fade-left"
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="message">Message</label>
+                  <label data-aos="fade-right" for="message">
+                    Message
+                  </label>
                   <textarea
+                    data-aos="fade-left"
                     rows="5"
                     class="form-control"
                     placeholder="Message"
@@ -83,7 +102,11 @@ class Contact extends Component {
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-aos="flip-left"
+              >
                 Send Message
               </button>
             </form>

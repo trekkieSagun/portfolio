@@ -34,12 +34,17 @@
 }
 .footer-icons i:hover {
   color: orange;
+  cursor: pointer;
 }
 
 .footer-text {
   padding-top: 2rem;
   color: black;
   text-align: center;
+}
+
+.footer-logo p {
+  color: #464646;
 }
 
 /* Go To Top Button */

@@ -6,19 +6,20 @@ import Navbar from "./components/Navbar/Navbar.component";
 import Works from "./components/Works/Works.component";
 import Resume from "./components/Resume/Resume.component";
 
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <div>
+      <Router>
         <Navbar />
-      </div>
-      <div>
+
         <About />
         <Resume />
         <Works />
         <Contact />
         <Footer />
-      </div>
+      </Router>
     </div>
   );
 }

@@ -15,9 +15,10 @@ function Footer() {
           <div className=" footer-info row">
             <div className=" footer-logo col-md-4">
               <h1>Sagun Shrestha</h1>
+              <p>© All right reserved. Sagun Shrestha</p>
             </div>
             <div className="col-md-8">
-              <div className="footer-icons">
+              <div className="footer-icons" data-aos="fade-up">
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-linkedin"></i>

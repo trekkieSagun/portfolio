@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./Navbar.component.css";
-// import logo from "../images/logo.png";
-import background from "../../images/background.jpg";
 import ParticlesComponent from "../Particle/Particle.component";
+import { Button, Container, Navbar, Nav } from "react-bootstrap";
 
-class Navbar extends Component {
+class NavbarComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,92 +38,96 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", function () {
-      var element = document.getElementById("top-navbar");
+    var element = document.getElementById("top-navbar");
 
+    window.addEventListener("scroll", function () {
       if (window.scrollY > 200) {
         element.classList.add("toggleNavbar");
+        document.getElementById("logo").style.display = "none";
       } else {
-        document.body.style.paddingTop = "0";
         element.classList.remove("toggleNavbar");
+        document.getElementById("logo").style.display = "";
       }
     });
+
+    if (window.innerWidth < 768) {
+      element.classList.add("toggleNavbar");
+    }
   }
   render() {
     return (
-      <div>
-        <nav id="top-navbar" className="navbar navbar-expand-lg fixed-top ">
-          <div className="container">
-            <div className="logo">
-              <a href="#">Sagun Shrestha</a>
-            </div>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="#"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#about">
-                    About
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#resume">
-                    Resume
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#works">
-                    Works
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#contact">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div className="header-page">
+        <Navbar
+          className="nav-bar"
+          id="top-navbar"
+          collapseOnSelect
+          expand="sm"
+          fixed="top"
+          variant="dark"
+        >
+          <Navbar.Brand href="#" id="logo">
+            <h1 className="logo-header">Sagun Shrestha</h1>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto "></Nav>
+            <Nav>
+              {/* <Nav.Link href="#">Home</Nav.Link> */}
+              <Nav.Link href="#about" className="nav-link">
+                About
+              </Nav.Link>
+              <Nav.Link href="#resume" className="nav-link">
+                Resume
+              </Nav.Link>
+              <Nav.Link href="#works" className="nav-link">
+                Works
+              </Nav.Link>
+              <Nav.Link href="#contact" className="nav-link">
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
         <header className="masthead">
-          {/* <img src={background} /> */}
-          <ParticlesComponent />
-          <div className="centered container h-100">
-            <div className="row h-100 align-items-center">
-              <div className=" col-md-10 banner-content">
-                <div className="center-text">
+          <div className="w-100 h-100">
+            <div
+              style={{ height: "100vh" }}
+              className="d-flex h-100 align-items-center justify-content-around position-relative"
+            >
+              <div id="tsp">
+                <ParticlesComponent
+                  className="position-absolute"
+                  style={{ height: "100vh" }}
+                />
+              </div>
+              <div className="banner-content">
+                <div
+                  className="center-text"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
                   <h1 className="fw-light">{this.state.header.name}</h1>
                   <p className="lead">{this.state.header.description}</p>
 
-                  <a href="#about">
+                  <a
+                    href="#about"
+                    className="position-relative "
+                    style={{ "z-index": "5" }}
+                  >
                     {" "}
-                    <button className="about-me-btn">Know About me</button>
+                    <button className="about-me-btn" data-aos="fade-up">
+                      Know About me
+                    </button>
                   </a>
                 </div>
               </div>
 
-              <div className="banner-icons col-md-2">
+              <div
+                className="banner-icons position-relative "
+                style={{ "z-index": "5" }}
+                data-aos="zoom-out-left"
+              >
                 {this.state.header.socialLinks.map((item, index) => (
                   <a href={item.url} target="_blank" key={index}>
                     <i className={item.icon}></i>
@@ -140,4 +143,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavbarComponent;

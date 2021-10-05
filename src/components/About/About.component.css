@@ -60,7 +60,13 @@
 }
 
 .non-active-about a {
+  transition: 0.5s;
   color: black;
+}
+
+.non-active-about a:hover {
+  color: white;
+  transition: 0.5s;
 }
 
 .non-active-about:hover {
